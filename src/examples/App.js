@@ -1,17 +1,25 @@
 import React from "react";
-import { Abia,Adamawa } from "../lib";
+import { Abia,Plateau } from "../lib";
 
 class App extends React.Component{
 
 
 
      render(){
-     const state = "Uchendu State";
+     const state = "State Info";
      const val = 55;
-    const renderData =  '<div class="hoverinfo">' +
+    const abiaData =  '<div class="hoverinfo">' +
      "<h6>" +
       state+
-     " State </h6>" +
+     " </h6>" +
+     "Total No Of Beneficiaries - " +
+     val +
+     "" +
+     "</div>";
+     const anambraData =  '<div class="hoverinfo">' +
+     "<h6>" +
+      state+
+     " </h6>" +
      "Total No Of Beneficiaries - " +
      val +
      "" +
@@ -20,17 +28,17 @@ class App extends React.Component{
           return(
                <div>
                    <Abia
-                   hoverColor="green"
+                   hoverColor="red"
                    hoverBackgroundColor="grey"
-                   renderData={renderData}
-                   defaultColor="#000000"
+                   renderData={abiaData}
+                   defaultColor="green"
                    id="kd"
                     />  
-                    <Adamawa
-                   hoverColor="green"
+                    <Plateau
+                   hoverColor="red"
                    hoverBackgroundColor="grey"
-                   renderData={renderData}
-                   defaultColor="#000000"
+                   renderData={anambraData}
+                   defaultColor="green"
                    id="ad"
                     />  
                </div>
