@@ -15,7 +15,12 @@
     "Open Source",
     "CSS"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allindeveloper/nigerianstates-map"
+  },
   "author": "Uchendu Precious",
+  "license": "Apache",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "react": "^16.3.2",
