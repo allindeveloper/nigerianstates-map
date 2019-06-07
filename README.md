@@ -16,12 +16,11 @@ You can check the src/examples from the project directory for assistance.
 npm install --save nigerianstates-map
 ```
 #
-![alt text](https://venturegardengroup-my.sharepoint.com/personal/precious_uchendu_venturegardengroup_com/Documents/states1.PNG?csf=1&e=nYbeTW&cid=63e0a9d9-c6d6-444c-b474-f3a618a08f6a)
+![alt text](https://drive.google.com/uc?export=view&id=1yA88BC7TdmW0koeNc86RaM4tPShPSGPP)
+
 
 ## 
-![alt text](https://venturegardengroup-my.sharepoint.com/:i:/r/personal/precious_uchendu_venturegardengroup_com/Documents/states2.png?csf=1&e=wG7Yil
-)
-
+![alt text](https://drive.google.com/uc?export=view&id=1-s_Waq_436mEzLCi_oqwz_6nY6FEAxty)
 
 
 
@@ -57,9 +56,9 @@ class App extends React.Component {
     
     /**
     * @prop hoverColor=>string color to be used when the map is hovered on.
-    * @prop hoverBackgroundColor=>Background color of the  data-tool-tip for the map is on hover
-    * @prop defaultColor=> the default color for the map
-    * @prop id=> A unique id for the map 
+    * @param hoverBackgroundColor=>Background color of the  data-tool-tip for the map is on hover
+    * @param defaultColor=> the default color for the map
+    * @param id=> An id for the map 
     */
     return(
       <div>
