@@ -77,8 +77,12 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.querySelector("#root"));
+```
 
+## Unit Test
+To run the tests, run `npm run test`.
 
+See the test files in `src/lib/tests` for an example of a component test.
 
 
 ## Contributing
@@ -90,9 +94,8 @@ ReactDOM.render(<App />, document.querySelector("#root"));
 
 ## How can I thank you?
 
-Why not star the github repo?
-Don't forget to Share to others.
+Why not star the github repo? Share to Others too.
 
-Don't forget to [follow me on twitter](https://twitter.com/allindeveloper)!
+And don't forget to [follow me on twitter](https://twitter.com/allindeveloper)!
 
 

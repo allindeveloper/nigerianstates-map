@@ -25,7 +25,7 @@ class Abia extends Component {
   render() {
     return (
       <div className="App">
-        <a href="javascript:void(0)" class="tip">
+        <a href="javascript:void(0)" className="tip">
           <span id={this.state.id} ref={this.myRef1}>Abia State</span>
           <svg
             height="300.0226150793651"
@@ -54,7 +54,7 @@ class Abia extends Component {
               transform="matrix(0.3663,0,0,0.3663,0,0)"
               strokeWidth="0.3400417065000732"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "fillOpacity": "0"
               }}
               fillOpacity="0"
@@ -65,14 +65,14 @@ class Abia extends Component {
               id={this.state.id}
               ref={this.myRef2}
               d="M405.4,669.8L405.5,674.6999999999999L404.8,680.0999999999999L409.7,682.5999999999999L421.8,682.6999999999999L426.3,684.8L426.90000000000003,687.6999999999999L428.3,690.3L431,692.4L434,693.5L435.4,697.3L434.7,702L436.59999999999997,710.8L440.59999999999997,718.5L439.59999999999997,721.4L435.59999999999997,720.6999999999999L431.29999999999995,717.3L426.59999999999997,714.6999999999999L423.79999999999995,710.3L419.69999999999993,707.4L416.49999999999994,706.9L414.29999999999995,708.5L414.79999999999995,714.2L412.79999999999995,718.8000000000001L412.69999999999993,719.9000000000001L414.69999999999993,720.5000000000001L415.5999999999999,722.1000000000001L415.0999999999999,723.7000000000002L412.69999999999993,725.3000000000002L408.3999999999999,724.7000000000002L404.69999999999993,725.7000000000002L404.5999999999999,727.4000000000002L405.3999999999999,728.9000000000002L405.5999999999999,730.5000000000002L404.3999999999999,735.8000000000002L404.0999999999999,739.4000000000002L404.5999999999999,743.3000000000002L404.0999999999999,747.0000000000002L401.3999999999999,749.7000000000003L399.49999999999994,752.7000000000003L400.59999999999997,756.8000000000003L400.09999999999997,758.3000000000003L399.9,759.7000000000003L401.7,763.0000000000002L402.3,766.5000000000002L396.7,762.7000000000003L392.3,762.6000000000003L389.2,761.3000000000003L385.9,761.4000000000003L379.09999999999997,762.8000000000003L375.7,761.8000000000003L374.59999999999997,755.3000000000003L383.2,742.1000000000003L383.59999999999997,738.0000000000002L381.9,734.9000000000002L388,717.3000000000002L391.2,713.8000000000002L392.2,711.7000000000002L392.9,709.5000000000001L394.09999999999997,707.8000000000001L394.7,705.8000000000001L394.7,703.5000000000001L394.3,701.2000000000002L394.3,698.9000000000002L393.7,696.8000000000002L392.8,695.2000000000002L393.5,694.0000000000001L394.4,690.2000000000002L393.29999999999995,680.8000000000002L390.09999999999997,677.9000000000002L387.79999999999995,677.4000000000002L383.59999999999997,675.3000000000002L381.79999999999995,673.7000000000002L385.69999999999993,668.8000000000002L391.29999999999995,665.8000000000002L391.99999999999994,666.5000000000002L395.99999999999994,665.9000000000002L399.99999999999994,665.7000000000002L405.3999999999999,669.8000000000002Z"
-              class="sm_state_NGA2841"
+              className="sm_state_NGA2841"
               opacity="1"
               strokeOpacity="1"
               strokeWidth="0.23539387132467562"
               strokeLinejoin="round"
               transform="matrix(0.3663,0,0,0.3663,0,0)"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 opacity: "1",
                 cursor: "pointer",
                 "strokeOpacity": "1",
@@ -81,11 +81,11 @@ class Abia extends Component {
               }}
               fillOpacity="1"
             />
-            <desc style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}>
+            <desc style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}>
               Created by Uchendu Precious. @allindeveloper
             </desc>
             <defs
-              style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+              style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
             />
             <text
               x="149.47472222222223"
@@ -95,7 +95,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -107,11 +107,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_35"
+              className="sm_label_35"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -124,7 +124,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -136,11 +136,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_72"
+              className="sm_label_72"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -153,7 +153,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -165,11 +165,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_109"
+              className="sm_label_109"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -182,7 +182,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -194,11 +194,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_146"
+              className="sm_label_146"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -211,7 +211,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -223,11 +223,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_183"
+              className="sm_label_183"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -240,7 +240,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -252,11 +252,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_220"
+              className="sm_label_220"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -269,7 +269,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -281,11 +281,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_257"
+              className="sm_label_257"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -298,7 +298,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -310,11 +310,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_294"
+              className="sm_label_294"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -327,7 +327,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -339,11 +339,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_331"
+              className="sm_label_331"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -356,7 +356,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -368,11 +368,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_368"
+              className="sm_label_368"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -385,7 +385,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -397,11 +397,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_405"
+              className="sm_label_405"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -414,7 +414,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -426,11 +426,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_442"
+              className="sm_label_442"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -443,7 +443,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -455,11 +455,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_479"
+              className="sm_label_479"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
@@ -472,7 +472,7 @@ class Abia extends Component {
               stroke="none"
               fill="#d5ddec"
               style={{
-                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
                 "textAnchor": "middle",
                 font: "bold 22px Arial",
                 cursor: "pointer",
@@ -484,11 +484,11 @@ class Abia extends Component {
               fontSize="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              class="sm_label_516"
+              className="sm_label_516"
             >
               <tspan
                 dy="7.6479365079364925"
-                style={{ "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)" }}
+                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
               >
                 Abia
               </tspan>
