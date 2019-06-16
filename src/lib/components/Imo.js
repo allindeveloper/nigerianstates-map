@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Imo extends Component {
   constructor(props) {
     super(props);
@@ -318,7 +318,7 @@ class Imo extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Imo
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -326,5 +326,31 @@ class Imo extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const imoData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Imo.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:imoData,
+  defaultColor:"green",
+  id:"im"
+};
+
+Imo.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Imo;

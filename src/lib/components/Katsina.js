@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Katsina extends Component {
   constructor(props) {
     super(props);
@@ -24,8 +24,8 @@ class Katsina extends Component {
  render() {
     return (
       <div className="App">
-          <a href="javascript:void(0)" 
-          className="tip"><span id="kas">Katsina State</span>
+          <a href="javascript:void(0)" className="tip">
+          <span id={this.state.id} ref={this.myRef1}>Katsina State</span>
            <svg
             height="300.0226150793651"
             version="1.1"
@@ -100,5 +100,32 @@ class Katsina extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const katsinaData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Katsina.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:katsinaData,
+  defaultColor:"green",
+  id:"kats"
+};
+
+Katsina.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
+
 
 export default Katsina;

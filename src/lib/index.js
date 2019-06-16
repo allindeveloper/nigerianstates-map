@@ -34,10 +34,12 @@ import Taraba from "./components/Taraba";
 import Ebonyi from "./components/Ebonyi";
 import Nassarawa from "./components/Nassarawa";
 import Bayelsa from "./components/Bayelsa";
+import Nigeria from "./components/Nigeria";
 import "./index.css";
 import "./App.css";
 
 export {
+  Nigeria,
   Abia,
   Adamawa,
   AkwaIbom,

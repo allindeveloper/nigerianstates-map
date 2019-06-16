@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types";
 class Anambra extends Component {
   constructor(props) {
     super(props);
@@ -249,7 +249,7 @@ class Anambra extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Anambra
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -257,5 +257,30 @@ class Anambra extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const anambraData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Anambra.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:anambraData,
+  defaultColor:"green",
+  id:"anam"
+};
 
+Anambra.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 export default Anambra;

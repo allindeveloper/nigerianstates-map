@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Kogi extends Component {
   constructor(props) {
     super(props);
@@ -203,7 +203,7 @@ class Kogi extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Kogi
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -211,5 +211,31 @@ class Kogi extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const kogiData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Kogi.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:kogiData,
+  defaultColor:"green",
+  id:"kog"
+};
+
+Kogi.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Kogi;

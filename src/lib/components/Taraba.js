@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Taraba extends Component {
   constructor(props) {
     super(props);
@@ -88,7 +88,7 @@ class Taraba extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Taraba
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -96,5 +96,31 @@ class Taraba extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const tarabaData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Taraba.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:tarabaData,
+  defaultColor:"green",
+  id:"ab"
+};
+
+Taraba.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Taraba;

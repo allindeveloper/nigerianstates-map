@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Gombe extends Component {
   constructor(props) {
     super(props);
@@ -97,5 +97,31 @@ class Gombe extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const gombeData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Gombe.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:gombeData,
+  defaultColor:"green",
+  id:"gomb"
+};
+
+Gombe.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Gombe;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Yobe extends Component {
   constructor(props) {
     super(props);
@@ -88,7 +88,7 @@ class Yobe extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Yobe
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -96,5 +96,31 @@ class Yobe extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const yobeData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Yobe.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:yobeData,
+  defaultColor:"green",
+  id:"ab"
+};
+
+Yobe.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Yobe;

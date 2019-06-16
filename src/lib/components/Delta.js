@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Delta extends Component {
   constructor(props) {
     super(props);
@@ -295,7 +295,7 @@ class Delta extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Delta
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -303,5 +303,31 @@ class Delta extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const deltaData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Delta.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:deltaData,
+  defaultColor:"green",
+  id:"delt"
+};
+
+Delta.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Delta;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Kano extends Component {
   constructor(props) {
     super(props);
@@ -24,6 +24,8 @@ class Kano extends Component {
  render() {
     return (
       <div className="App">
+      <a href="javascript:void(0)" className="tip">
+          <span id={this.state.id} ref={this.myRef1}>Kano State</span>
             <svg
             height="300.0226150793651"
             version="1.1"
@@ -90,9 +92,36 @@ class Kano extends Component {
               </tspan>
             </text>
           </svg>
+          </a>
       </div>
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const kanoData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Kano.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:kanoData,
+  defaultColor:"green",
+  id:"kan"
+};
+
+Kano.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Kano;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from 'prop-types';
 class Abia extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,6 @@ class Abia extends Component {
 
   componentWillMount() {}
   componentDidMount() {
-    console.log("state", this.state);
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
@@ -104,7 +103,7 @@ class Abia extends Component {
               strokeWidth="0"
               fontSize="22px"
               fontWeight="bold"
-              fontSize="Arial"
+              fontStyle="Arial"
               opacity="1"
               transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
               className="sm_label_35"
@@ -145,359 +144,39 @@ class Abia extends Component {
                 Abia
               </tspan>
             </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_109"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_146"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_183"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_220"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_257"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_294"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_331"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_368"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_405"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_442"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_479"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
-            <text
-              x="149.47472222222223"
-              y="254.9604365079365"
-              textAnchor="middle"
-              font='10px "Arial"'
-              stroke="none"
-              fill="#d5ddec"
-              style={{
-                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                "textAnchor": "middle",
-                font: "bold 22px Arial",
-                cursor: "pointer",
-                opacity: "1"
-              }}
-              strokeWidth="0"
-              fontSize="22px"
-              fontWeight="bold"
-              fontSize="Arial"
-              opacity="1"
-              transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
-              className="sm_label_516"
-            >
-              <tspan
-                dy="7.6479365079364925"
-                style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-              >
-                Abia
-              </tspan>
-            </text>
+           
           </svg>
         </a>
       </div>
     );
   }
 }
+
+const state = "State Info";
+    const val = 55;
+const abiaData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Abia.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:abiaData,
+  defaultColor:"green",
+  id:"ab"
+};
+
+Abia.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Abia;

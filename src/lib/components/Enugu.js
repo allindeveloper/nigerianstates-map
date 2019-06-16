@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types"; 
 class Enugu extends Component {
   constructor(props) {
     super(props);
@@ -249,7 +249,7 @@ class Enugu extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Enugu
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -257,5 +257,31 @@ class Enugu extends Component {
     );
   }
 }
+const state = "State Info";
+    const val = 55;
+const enuguData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Enugu.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:enuguData,
+  defaultColor:"green",
+  id:"enug"
+};
+
+Enugu.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Enugu;

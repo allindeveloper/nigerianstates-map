@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types";
 class Adamawa extends Component {
 
   constructor(props) {
@@ -13,7 +13,6 @@ class Adamawa extends Component {
 
   componentWillMount() {}
   componentDidMount() {
-    console.log("state", this.state);
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
@@ -344,7 +343,7 @@ class Adamawa extends Component {
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
                 Adamawa
-              </tspan>
+                           </tspan>
             </text>
           </svg>
         </a>
@@ -352,5 +351,32 @@ class Adamawa extends Component {
     );
   }
 }
+
+const state = "State Info";
+    const val = 55;
+const adamawaState =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Beneficiaries - " +
+      val +
+      "" +
+      "</div>";
+Adamawa.defaultProps = {
+  hoverColor:"red",
+  hoverBackgroundColor:"grey",
+  renderData:adamawaState,
+  defaultColor:"green",
+  id:"ad"
+};
+
+Adamawa.propTypes = {
+  hoverColor: PropTypes.string,
+  hoverBackgroundColor: PropTypes.string.isRequired,
+  renderData: PropTypes.string.isRequired,
+  defaultColor: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Adamawa;
