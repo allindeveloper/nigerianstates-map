@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Nigeria, Abia,Lagos, AkwaIbom, Anambra, Bauchi, Bayelsa } from "../lib";
+import { Nigeria, Abia,Lagos, AkwaIbom, Anambra, Bauchi, Bayelsa, Kaduna } from "../lib";
+import Ekiti from "../lib/components/Ekiti";
 
 class App extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class App extends React.Component {
       "<h6>" +
       state +
       " </h6>" +
-      "Total No Of Beneficiaries - " +
+      "Total No Of Farms - " +
       val +
       "" +
       "</div>";
@@ -19,33 +20,37 @@ class App extends React.Component {
       "<h6>" +
       state +
       " </h6>" +
-      "Total No Of Beneficiaries - " +
+      "Total No Of Farms - " +
+      val +
+      "" +
+      "</div>";
+      const plateauData =
+      '<div class="hoverinfo">' +
+      "<h6>" +
+      state +
+      " </h6>" +
+      "Total No Of Farms - " +
       val +
       "" +
       "</div>";
     return (
       <div>
         <Nigeria
-          stateName="gombe"
+          stateName="plateau"
           hoverColor="red"
           hoverBackgroundColor="grey"
-          renderData={abiaData}
+          renderData={plateauData}
           defaultColor="green"
-          id="kd"
+          id="plat"
         />
-        <Abia
-          // hoverColor="red"
-          // hoverBackgroundColor="grey"
-          // renderData={abiaData}
-          // defaultColor="green"
-          // id="kd"
+        <Kaduna
         />
         <Lagos
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={lagosData}
           defaultColor="green"
-          id="ad"
+          id="lag"
         />
       </div>
     );

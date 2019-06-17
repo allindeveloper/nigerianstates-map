@@ -14,7 +14,7 @@ describe("Abia Component", () => {
       "<h6>" +
       state +
       " State </h6>" +
-      "Total No Of Beneficiaries - " +
+      "Total No Of Farms - " +
       val +
       "" +
       "</div>";

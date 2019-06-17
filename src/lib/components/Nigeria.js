@@ -36,9 +36,9 @@ import Taraba from "../components/Taraba";
 import Ebonyi from "../components/Ebonyi";
 import Nassarawa from "../components/Nassarawa";
 import Bayelsa from "../components/Bayelsa";
+import Fct from "../components/Fct";
 import * as Constants from "../constants";
 class Nigeria extends Component {
-  
   constructor(props) {
     super(props);
     this.myRef1 = React.createRef();
@@ -61,151 +61,157 @@ class Nigeria extends Component {
 
   componentDidMount() {}
   renderState = () => {
-    let count ={};
+    let count = {};
     count = this.state;
 
-    if(!Object.keys(count).length <= 0){
-    switch (this.props.stateName.toLowerCase()) {
-      case Constants.ABIA:
-        return <Abia {...this.props} />;
-        break;
-      case Constants.ADAMAWA:
-        return <Adamawa {...this.props} />;
-        break;
-      case Constants.AKWAIBOM:
-        return <AkwaIbom {...this.props} />;
-        break;
+    if (!Object.keys(count).length <= 0) {
+      switch (this.props.stateName.toLowerCase()) {
+        case Constants.ABIA:
+          return <Abia {...this.props} />;
+          break;
+        case Constants.ADAMAWA:
+          return <Adamawa {...this.props} />;
+          break;
+        case Constants.AKWAIBOM:
+          return <AkwaIbom {...this.props} />;
+          break;
         case Constants.ANAMBRA:
-        return <Anambra {...this.props} />;
-        break;
-      case Constants.BAUCHI:
-        return <Bauchi {...this.props} />;
-        break;
-      case Constants.BAYELSA:
-        return <Bayelsa {...this.props} />;
-        break;
+          return <Anambra {...this.props} />;
+          break;
+        case Constants.BAUCHI:
+          return <Bauchi {...this.props} />;
+          break;
+        case Constants.BAYELSA:
+          return <Bayelsa {...this.props} />;
+          break;
         case Constants.BENUE:
-        return <Benue {...this.props} />;
-        break;
-      case Constants.BORNO:
-        return <Borno {...this.props} />;
-        break;
-      case Constants.CROSSRIVER:
-        return <CrossRiver {...this.props} />;
-        break;
+          return <Benue {...this.props} />;
+          break;
+        case Constants.BORNO:
+          return <Borno {...this.props} />;
+          break;
+        case Constants.CROSSRIVER:
+          return <CrossRiver {...this.props} />;
+          break;
         case Constants.DELTA:
-        return <Delta {...this.props} />;
-        break;
-      case Constants.EBONYI:
-        return <Ebonyi {...this.props} />;
-        break;
-      case Constants.EDO:
-        return <Edo {...this.props} />;
-        break;
+          return <Delta {...this.props} />;
+          break;
+        case Constants.EBONYI:
+          return <Ebonyi {...this.props} />;
+          break;
+        case Constants.EDO:
+          return <Edo {...this.props} />;
+          break;
         case Constants.EKITI:
-        return <Ekiti {...this.props} />;
-        break;
-      case Constants.ENUGU:
-        return <Enugu {...this.props} />;
-        break;
-      case Constants.GOMBE:
-        return <Gombe {...this.props} />;
-        break;
+          return <Ekiti {...this.props} />;
+          break;
+        case Constants.ENUGU:
+          return <Enugu {...this.props} />;
+          break;
+        case Constants.ABUJA:
+          return <Fct {...this.props} />;
+          break;
+          case Constants.FCT:
+          return <Fct {...this.props} />;
+          break;
+        case Constants.GOMBE:
+          return <Gombe {...this.props} />;
+          break;
         case Constants.IMO:
-        return <Imo {...this.props} />;
-        break;
-      case Constants.JIGAWA:
-        return <Jigawa {...this.props} />;
-        break;
-      case Constants.KADUNA:
-        return <Kaduna {...this.props} />;
-        break;
+          return <Imo {...this.props} />;
+          break;
+        case Constants.JIGAWA:
+          return <Jigawa {...this.props} />;
+          break;
+        case Constants.KADUNA:
+          return <Kaduna {...this.props} />;
+          break;
         case Constants.KANO:
-        return <Kano {...this.props} />;
-        break;
-      case Constants.KATSINA:
-        return <Katsina {...this.props} />;
-        break;
-      case Constants.KEBBI:
-        return <Kebbi {...this.props} />;
-        break;
+          return <Kano {...this.props} />;
+          break;
+        case Constants.KATSINA:
+          return <Katsina {...this.props} />;
+          break;
+        case Constants.KEBBI:
+          return <Kebbi {...this.props} />;
+          break;
         case Constants.KOGI:
-        return <Kogi {...this.props} />;
-        break;
-      case Constants.KWARA:
-        return <Kwara {...this.props} />;
-        break;
-      case Constants.LAGOS:
-        return <Lagos {...this.props} />;
-        break;
+          return <Kogi {...this.props} />;
+          break;
+        case Constants.KWARA:
+          return <Kwara {...this.props} />;
+          break;
+        case Constants.LAGOS:
+          return <Lagos {...this.props} />;
+          break;
         case Constants.NASSARAWA:
-        return <Nassarawa {...this.props} />;
-        break;
-      case Constants.NIGER:
-        return <Niger {...this.props} />;
-        break;
-      case Constants.OGUN:
-        return <Ogun {...this.props} />;
-        break;
+          return <Nassarawa {...this.props} />;
+          break;
+        case Constants.NIGER:
+          return <Niger {...this.props} />;
+          break;
         case Constants.OGUN:
-        return <Ogun {...this.props} />;
-        break;
-      case Constants.ONDO:
-        return <Ondo {...this.props} />;
-        break;
-      case Constants.OSUN:
-        return <Osun {...this.props} />;
-        break;
+          return <Ogun {...this.props} />;
+          break;
+        case Constants.OGUN:
+          return <Ogun {...this.props} />;
+          break;
+        case Constants.ONDO:
+          return <Ondo {...this.props} />;
+          break;
+        case Constants.OSUN:
+          return <Osun {...this.props} />;
+          break;
         case Constants.OYO:
-        return <Oyo {...this.props} />;
-        break;
-      case Constants.PLATEAU:
-        return <Plateau {...this.props} />;
-        break;
-      case Constants.RIVERS:
-        return <Rivers {...this.props} />;
-        break;
+          return <Oyo {...this.props} />;
+          break;
+        case Constants.PLATEAU:
+          return <Plateau {...this.props} />;
+          break;
+        case Constants.RIVERS:
+          return <Rivers {...this.props} />;
+          break;
         case Constants.SOKOTO:
-        return <Sokoto {...this.props} />;
-        break;
-      case Constants.TARABA:
-        return <Taraba {...this.props} />;
-        break;
-      case Constants.YOBE:
-        return <Yobe {...this.props} />;
-        break;
+          return <Sokoto {...this.props} />;
+          break;
+        case Constants.TARABA:
+          return <Taraba {...this.props} />;
+          break;
+        case Constants.YOBE:
+          return <Yobe {...this.props} />;
+          break;
         case Constants.ZAMFARA:
-        return <Zamfara {...this.props} />;
-        break;
-      default:
-        return new Error("Cannot Find Map to Render")
+          return <Zamfara {...this.props} />;
+          break;
+        default:
+          return new Error("Cannot Find Map to Render");
+      }
+    } else {
+      return new Error("Please Provided Neccessary Props");
     }
-  }else{
-    return new Error("Please Provided Neccessary Props")
-  }
   };
   render() {
     return <div className="App">{this.renderState()};</div>;
   }
 }
 const state = "State Info";
-    const val = 55;
+const val = 55;
 const lagosData =
-      '<div class="hoverinfo">' +
-      "<h6>" +
-      state +
-      " </h6>" +
-      "Total No Of Beneficiaries - " +
-      val +
-      "" +
-      "</div>";
+  '<div class="hoverinfo">' +
+  "<h6>" +
+  state +
+  " </h6>" +
+  "Total No Of Farms - " +
+  val +
+  "" +
+  "</div>";
 Nigeria.defaultProps = {
-  stateName:"Lagos",
-  hoverColor:"red",
-  hoverBackgroundColor:"grey",
-  renderData:lagosData,
-  defaultColor:"green",
-  id:"lg"
+  stateName: "Lagos",
+  hoverColor: "red",
+  hoverBackgroundColor: "grey",
+  renderData: lagosData,
+  defaultColor: "green",
+  id: "lg"
 };
 
 Nigeria.propTypes = {
@@ -214,7 +220,7 @@ Nigeria.propTypes = {
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
   defaultColor: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 };
 
 export default Nigeria;

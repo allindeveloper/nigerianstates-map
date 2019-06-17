@@ -103,7 +103,7 @@ const tarabaData =
       "<h6>" +
       state +
       " </h6>" +
-      "Total No Of Beneficiaries - " +
+      "Total No Of Farms - " +
       val +
       "" +
       "</div>";

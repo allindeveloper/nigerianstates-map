@@ -1,6 +1,7 @@
 export const ABIA = "abia";
 export const ADAMAWA = "adamawa";
 export const AKWAIBOM = "akwaibom";
+export const ALL = "all";
 export const ANAMBRA = "anambra";
 export const BAUCHI = "bauchi";
 export const BAYELSA = "bayelsa";
@@ -12,6 +13,8 @@ export const EBONYI = "ebonyi";
 export const EDO = "edo";
 export const EKITI = "ekiti";
 export const ENUGU = "enugu";
+export const FCT  = "fct";
+export const ABUJA = "abuja";
 export const GOMBE = "gombe";
 export const IMO = "imo";
 export const JIGAWA = "jigawa";
