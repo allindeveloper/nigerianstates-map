@@ -7,7 +7,11 @@ class Adamawa extends Component {
     this.myRef1 = React.createRef();
     this.myRef2 = React.createRef();
     this.state = {
-      ...props
+      hoverColor:this.props.hoverColor,
+   hoverBackgroundColor:this.props.hoverBackgroundColor,
+      renderData:this.props.renderData,
+      defaultColor:this.props.defaultColor,
+      id:this.props.id
     };
   }
 

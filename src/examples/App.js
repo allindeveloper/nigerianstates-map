@@ -43,7 +43,7 @@ class App extends React.Component {
           defaultColor="green"
           id="plat"
         />
-        <Kaduna
+        <Abia
         />
         <Lagos
           hoverColor="red"

@@ -16,11 +16,11 @@ You can check the src/examples from the project directory for assistance.
 npm install --save nigerianstates-map
 ```
 #
-![alt text](https://drive.google.com/uc?export=view&id=1yA88BC7TdmW0koeNc86RaM4tPShPSGPP)
+![alt text](https://drive.google.com/uc?export=view&id=1MK6KvyI-41J2aQYPO6Nkm66MYTRZHQxf)
 
 
 ## 
-![alt text](https://drive.google.com/uc?export=view&id=1-s_Waq_436mEzLCi_oqwz_6nY6FEAxty)
+![alt text](https://drive.google.com/uc?export=view&id=1e9DvBti8I9kwjb9zNd7V8jpHCDoz96oV)
 
 
 
@@ -29,7 +29,7 @@ npm install --save nigerianstates-map
 ```javascript
 
 import React from "react";
-import {Abia, Adamawa} from 'nigerianstates-map'; 
+import {Abia, Adamawa, Nigeria} from 'nigerianstates-map'; 
 
 /**
  * You can import any state you need.
@@ -58,17 +58,27 @@ class App extends React.Component {
     * @prop hoverColor=>string color to be used when the map is hovered on.
     * @param hoverBackgroundColor=>Background color of the  data-tool-tip for the map is on hover
     * @param defaultColor=> the default color for the map
-    * @param id=> An id for the map 
+    * @param id=> A unique id for the map 
     */
     return(
       <div>
-          <Abia
-          hoverColor="green"
+        <Nigeria
+          stateName="plateau"
+          hoverColor="red"
           hoverBackgroundColor="grey"
-          renderData={renderData}
-          defaultColor="blue"
-          id="kd"
-        />  
+          renderData={plateauData}
+          defaultColor="green"
+          id="plat"
+        />
+        <Kaduna
+        />
+        <Lagos
+          hoverColor="red"
+          hoverBackgroundColor="grey"
+          renderData={lagosData}
+          defaultColor="green"
+          id="lag"
+        />
      
     </div>
 

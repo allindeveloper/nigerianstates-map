@@ -7,7 +7,11 @@ class Abia extends Component {
     this.myRef2 = React.createRef();
 
     this.state = {
-      ...props
+      hoverColor:this.props.hoverColor,
+   hoverBackgroundColor:this.props.hoverBackgroundColor,
+      renderData:this.props.renderData,
+      defaultColor:this.props.defaultColor,
+      id:this.props.id
     };
   }
 
@@ -159,7 +163,7 @@ const abiaData =
       "<h6>" +
       state +
       " </h6>" +
-      "Total No Of Farms - " +
+      "Total No Of Beneficiaries - " +
       val +
       "" +
       "</div>";

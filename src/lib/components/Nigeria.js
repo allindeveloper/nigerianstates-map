@@ -43,9 +43,13 @@ class Nigeria extends Component {
     super(props);
     this.myRef1 = React.createRef();
     this.myRef2 = React.createRef();
-
+    this.renderState = this.renderState.bind(this);
     this.state = {
-      ...props
+      hoverColor:this.props.hoverColor,
+   hoverBackgroundColor:this.props.hoverBackgroundColor,
+      renderData:this.props.renderData,
+      defaultColor:this.props.defaultColor,
+      id:this.props.id
     };
   }
 
@@ -60,7 +64,7 @@ class Nigeria extends Component {
   }
 
   componentDidMount() {}
-  renderState = () => {
+  renderState () {
     let count = {};
     count = this.state;
 
@@ -191,7 +195,7 @@ class Nigeria extends Component {
     }
   };
   render() {
-    return <div className="App">{this.renderState()};</div>;
+    return <div className="App">{this.renderState.call(this)};</div>;
   }
 }
 const state = "State Info";
