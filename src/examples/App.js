@@ -24,26 +24,23 @@ class App extends React.Component {
       val +
       "" +
       "</div>";
-      const plateauData =
-      '<div class="hoverinfo">' +
-      "<h6>" +
-      state +
-      " </h6>" +
-      "Total No Of Farms - " +
-      val +
+      let plateauData =  '<div class="hoverinfo">' +
+      "<h3>Edo State</h3>"+
+      "<h5>PVHHTarget - " + 14000 +"</h5>"+
+      "<h5>ZoneName - " + 34030+"</h5>"+
       "" +
       "</div>";
     return (
       <div>
         <Nigeria
-          stateName="plateau"
+          stateName="delta"
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}
           defaultColor="green"
-          id="plat"
+          id="lag"
         />
-        <Abia
+        {/* <Abia
         />
         <Lagos
           hoverColor="red"
@@ -51,7 +48,7 @@ class App extends React.Component {
           renderData={lagosData}
           defaultColor="green"
           id="lag"
-        />
+        /> */}
       </div>
     )
   }

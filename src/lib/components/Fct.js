@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 class Fct extends Component {
   constructor(props) {
     super(props);
-    this.myRef1 = React.createRef();
-    this.myRef2 = React.createRef();
+     
 
     this.state = {
       hoverColor:this.props.hoverColor,
@@ -23,13 +22,14 @@ class Fct extends Component {
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
     `;
-    this.myRef1.current.innerHTML += this.state.renderData;
+      this.refs.myRef1.innerHTML = "";
+this.refs.myRef1.innerHTML += this.state.renderData;
   }
   render() {
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref={this.myRef1}>
+          <span id={this.state.id} ref="myRef1">
             Abuja
           </span>
           <svg
@@ -37,7 +37,7 @@ class Fct extends Component {
             version="1.1"
             width="369.2"
             xmlns="http://www.w3.org/2000/svg"
-            style={{overflow: "hidden", position: "relative", left: "-0.2px", top: "0.733333px"}}
+            style={{ display:"block", overflow: "hidden", position: "relative", left: "-0.2px", top: "0.733333px"}}
             viewBox="119.68960099155106 141.23217091550424 36.421988493088335 29.59756293089628"
             preserveAspectRatio="xMinYMin"
           >
@@ -58,7 +58,7 @@ class Fct extends Component {
             />
             <path
               fill="#88a4bc"
-              stroke="#ffffff"id={this.state.id}ref={this.myRef2}
+              stroke="#ffffff"id={this.state.id}ref="myRef2"
               d="M413.1,389.4L413.3,391.09999999999997L413,392.7L412,393.4L411,393.7L409.5,396.4L407.6,405.5L407.40000000000003,410.7L407.70000000000005,419L403.80000000000007,436L400.20000000000005,446L397.30000000000007,450.8L393.6000000000001,454.8L382.9000000000001,460.2L371.2000000000001,463.3L359.2000000000001,465.2L355.5000000000001,465.8L352.4000000000001,465.40000000000003L347.30000000000007,465.6L343.50000000000006,465.20000000000005L341.50000000000006,461.6L341.00000000000006,460.1L340.20000000000005,400L340.6,397.6L342.6,396.70000000000005L358,396.1L363,397.6L370.7,405.20000000000005L374.7,407.40000000000003L375.2,407.3L386.9,390.6L394.79999999999995,389.70000000000005L397.09999999999997,389.80000000000007L399.4,390.1000000000001L401.5,391.00000000000006L403.3,389.70000000000005L405.90000000000003,386.00000000000006L408.90000000000003,387.1000000000001L410.40000000000003,390.00000000000006L413.1,389.40000000000003Z"
               className="sm_state_NGA3470"
               opacity="1"

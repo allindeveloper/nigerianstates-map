@@ -41,8 +41,7 @@ import * as Constants from "../constants";
 class Nigeria extends Component {
   constructor(props) {
     super(props);
-    this.myRef1 = React.createRef();
-    this.myRef2 = React.createRef();
+     
     this.renderState = this.renderState.bind(this);
     this.state = {
       hoverColor:this.props.hoverColor,
@@ -58,10 +57,14 @@ class Nigeria extends Component {
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
-    #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
-    `;
-    // this.myRef1.current.innerHTML += this.state.renderData;
+    #${this.state.id}{background-color: ${this.state.hoverBackgroundColor};
+      width:250px;
+      max-width:400px;
+      top:220px
   }
+      
+    `;
+   }
 
   componentDidMount() {}
   renderState () {
