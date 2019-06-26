@@ -189,7 +189,7 @@ class Osun extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

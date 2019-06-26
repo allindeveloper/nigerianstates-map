@@ -352,7 +352,7 @@ class Adamawa extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 

@@ -152,7 +152,7 @@ class Abia extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 

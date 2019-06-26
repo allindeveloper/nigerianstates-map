@@ -97,7 +97,7 @@ class AkwaIbom extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 

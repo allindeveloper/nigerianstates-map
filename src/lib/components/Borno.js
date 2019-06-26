@@ -281,7 +281,7 @@ class Borno extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

@@ -140,7 +140,7 @@ class Oyo extends Component {
         </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

@@ -98,7 +98,7 @@ class Kano extends Component {
           </svg>
           </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

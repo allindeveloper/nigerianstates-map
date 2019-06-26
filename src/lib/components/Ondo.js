@@ -166,7 +166,7 @@ class Ondo extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

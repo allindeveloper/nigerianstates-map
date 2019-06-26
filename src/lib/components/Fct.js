@@ -99,7 +99,7 @@ class Fct extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 

@@ -189,7 +189,7 @@ class Bauchi extends Component {
         </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

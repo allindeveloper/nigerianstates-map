@@ -373,7 +373,7 @@ class CrossRiver extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";

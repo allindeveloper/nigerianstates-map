@@ -212,7 +212,7 @@ class Kogi extends Component {
           </svg>
         </a>
       </div>
-    );
+    )
   }
 }
 const state = "State Info";
