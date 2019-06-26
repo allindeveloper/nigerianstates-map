@@ -195,7 +195,7 @@ class Nigeria extends Component {
     }
   };
   render() {
-    return <div className="App">{this.renderState.call(this)};</div>;
+    return <div className="App">{this.renderState.call(this)}</div>
   }
 }
 const state = "State Info";
