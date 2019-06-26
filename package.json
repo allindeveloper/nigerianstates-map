@@ -1,6 +1,6 @@
 {
   "name": "nigerianstates-map",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -41,7 +41,7 @@
     "enzyme-adapter-react-16": "^1.14.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3007 && react-scripts start",
     "build-examples": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",

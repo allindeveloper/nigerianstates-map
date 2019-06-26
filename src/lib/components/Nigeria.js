@@ -71,121 +71,121 @@ class Nigeria extends Component {
     if (!Object.keys(count).length <= 0) {
       switch (this.props.stateName.toLowerCase()) {
         case Constants.ABIA:
-          return <Abia {...this.props} />;
+          return <Abia {...this.props} />
           break;
         case Constants.ADAMAWA:
-          return <Adamawa {...this.props} />;
+          return <Adamawa {...this.props} />
           break;
         case Constants.AKWAIBOM:
-          return <AkwaIbom {...this.props} />;
+          return <AkwaIbom {...this.props} />
           break;
         case Constants.ANAMBRA:
-          return <Anambra {...this.props} />;
+          return <Anambra {...this.props} />
           break;
         case Constants.BAUCHI:
-          return <Bauchi {...this.props} />;
+          return <Bauchi {...this.props} />
           break;
         case Constants.BAYELSA:
-          return <Bayelsa {...this.props} />;
+          return <Bayelsa {...this.props} />
           break;
         case Constants.BENUE:
-          return <Benue {...this.props} />;
+          return <Benue {...this.props} />
           break;
         case Constants.BORNO:
-          return <Borno {...this.props} />;
+          return <Borno {...this.props} />
           break;
         case Constants.CROSSRIVER:
-          return <CrossRiver {...this.props} />;
+          return <CrossRiver {...this.props} />
           break;
         case Constants.DELTA:
-          return <Delta {...this.props} />;
+          return <Delta {...this.props} />
           break;
         case Constants.EBONYI:
-          return <Ebonyi {...this.props} />;
+          return <Ebonyi {...this.props} />
           break;
         case Constants.EDO:
-          return <Edo {...this.props} />;
+          return <Edo {...this.props} />
           break;
         case Constants.EKITI:
-          return <Ekiti {...this.props} />;
+          return <Ekiti {...this.props} />
           break;
         case Constants.ENUGU:
-          return <Enugu {...this.props} />;
+          return <Enugu {...this.props} />
           break;
         case Constants.ABUJA:
-          return <Fct {...this.props} />;
+          return <Fct {...this.props} />
           break;
           case Constants.FCT:
-          return <Fct {...this.props} />;
+          return <Fct {...this.props} />
           break;
         case Constants.GOMBE:
-          return <Gombe {...this.props} />;
+          return <Gombe {...this.props} />
           break;
         case Constants.IMO:
-          return <Imo {...this.props} />;
+          return <Imo {...this.props} />
           break;
         case Constants.JIGAWA:
-          return <Jigawa {...this.props} />;
+          return <Jigawa {...this.props} />
           break;
         case Constants.KADUNA:
-          return <Kaduna {...this.props} />;
+          return <Kaduna {...this.props} />
           break;
         case Constants.KANO:
-          return <Kano {...this.props} />;
+          return <Kano {...this.props} />
           break;
         case Constants.KATSINA:
-          return <Katsina {...this.props} />;
+          return <Katsina {...this.props} />
           break;
         case Constants.KEBBI:
-          return <Kebbi {...this.props} />;
+          return <Kebbi {...this.props} />
           break;
         case Constants.KOGI:
-          return <Kogi {...this.props} />;
+          return <Kogi {...this.props} />
           break;
         case Constants.KWARA:
-          return <Kwara {...this.props} />;
+          return <Kwara {...this.props} />
           break;
         case Constants.LAGOS:
-          return <Lagos {...this.props} />;
+          return <Lagos {...this.props} />
           break;
         case Constants.NASSARAWA:
-          return <Nassarawa {...this.props} />;
+          return <Nassarawa {...this.props} />
           break;
         case Constants.NIGER:
-          return <Niger {...this.props} />;
+          return <Niger {...this.props} />
           break;
         case Constants.OGUN:
-          return <Ogun {...this.props} />;
+          return <Ogun {...this.props} />
           break;
         case Constants.OGUN:
-          return <Ogun {...this.props} />;
+          return <Ogun {...this.props} />
           break;
         case Constants.ONDO:
-          return <Ondo {...this.props} />;
+          return <Ondo {...this.props} />
           break;
         case Constants.OSUN:
-          return <Osun {...this.props} />;
+          return <Osun {...this.props} />
           break;
         case Constants.OYO:
-          return <Oyo {...this.props} />;
+          return <Oyo {...this.props} />
           break;
         case Constants.PLATEAU:
-          return <Plateau {...this.props} />;
+          return <Plateau {...this.props} />
           break;
         case Constants.RIVERS:
-          return <Rivers {...this.props} />;
+          return <Rivers {...this.props} />
           break;
         case Constants.SOKOTO:
-          return <Sokoto {...this.props} />;
+          return <Sokoto {...this.props} />
           break;
         case Constants.TARABA:
-          return <Taraba {...this.props} />;
+          return <Taraba {...this.props} />
           break;
         case Constants.YOBE:
-          return <Yobe {...this.props} />;
+          return <Yobe {...this.props} />
           break;
         case Constants.ZAMFARA:
-          return <Zamfara {...this.props} />;
+          return <Zamfara {...this.props} />
           break;
         default:
           return new Error("Cannot Find Map to Render");
