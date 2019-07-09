@@ -72,122 +72,125 @@ class Nigeria extends Component {
     count = this.state;
 
     if (!Object.keys(count).length <= 0) {
-      switch (this.props.stateName.toLowerCase()) {
-        case Constants.ABIA:
+      switch (this.props.stateName.toLowerCase().replace(/\s/g,'')) {
+        case Constants.ABIA.toLowerCase().replace(/\s/g,''):
           return <Abia {...this.props} />
           break;
-        case Constants.ADAMAWA:
+        case Constants.ADAMAWA.toLowerCase().replace(/\s/g,''):
           return <Adamawa {...this.props} />
           break;
-        case Constants.AKWAIBOM:
+        case Constants.AKWAIBOM.toLowerCase().replace(/\s/g,''):
           return <AkwaIbom {...this.props} />
           break;
-        case Constants.ANAMBRA:
+        case Constants.ANAMBRA.toLowerCase().replace(/\s/g,''):
           return <Anambra {...this.props} />
           break;
-        case Constants.BAUCHI:
+        case Constants.BAUCHI.toLowerCase().replace(/\s/g,''):
           return <Bauchi {...this.props} />
           break;
-        case Constants.BAYELSA:
+        case Constants.BAYELSA.toLowerCase().replace(/\s/g,''):
           return <Bayelsa {...this.props} />
           break;
-        case Constants.BENUE:
+        case Constants.BENUE.toLowerCase().replace(/\s/g,''):
           return <Benue {...this.props} />
           break;
-        case Constants.BORNO:
+        case Constants.BORNO.toLowerCase().replace(/\s/g,''):
           return <Borno {...this.props} />
           break;
-        case Constants.CROSSRIVER:
+        case Constants.CROSSRIVER.toLowerCase().replace(/\s/g,''):
           return <CrossRiver {...this.props} />
           break;
-        case Constants.DELTA:
+        case Constants.DELTA.toLowerCase().replace(/\s/g,''):
           return <Delta {...this.props} />
           break;
-        case Constants.EBONYI:
+        case Constants.EBONYI.toLowerCase().replace(/\s/g,''):
           return <Ebonyi {...this.props} />
           break;
-        case Constants.EDO:
+        case Constants.EDO.toLowerCase().replace(/\s/g,''):
           return <Edo {...this.props} />
           break;
-        case Constants.EKITI:
+        case Constants.EKITI.toLowerCase().replace(/\s/g,''):
           return <Ekiti {...this.props} />
           break;
-        case Constants.ENUGU:
+        case Constants.ENUGU.toLowerCase().replace(/\s/g,''):
           return <Enugu {...this.props} />
           break;
-        case Constants.ABUJA:
+        case Constants.ABUJA.toLowerCase().replace(/\s/g,''):
           return <Fct {...this.props} />
           break;
-          case Constants.FCT:
+        case Constants.FCT.toLowerCase().replace(/\s/g,''):
           return <Fct {...this.props} />
           break;
-        case Constants.GOMBE:
+        case Constants.FEDERALCAPITALTERRITORY.toLowerCase().replace(/\s/g,''):
+          return <Fct {...this.props} />
+          break;
+        case Constants.GOMBE.toLowerCase().replace(/\s/g,''):
           return <Gombe {...this.props} />
           break;
-        case Constants.IMO:
+        case Constants.IMO.toLowerCase().replace(/\s/g,''):
           return <Imo {...this.props} />
           break;
-        case Constants.JIGAWA:
+        case Constants.JIGAWA.toLowerCase().replace(/\s/g,''):
           return <Jigawa {...this.props} />
           break;
-        case Constants.KADUNA:
+        case Constants.KADUNA.toLowerCase().replace(/\s/g,''):
           return <Kaduna {...this.props} />
           break;
-        case Constants.KANO:
+        case Constants.KANO.toLowerCase().replace(/\s/g,''):
           return <Kano {...this.props} />
           break;
-        case Constants.KATSINA:
+        case Constants.KATSINA.toLowerCase().replace(/\s/g,''):
           return <Katsina {...this.props} />
           break;
-        case Constants.KEBBI:
+        case Constants.KEBBI.toLowerCase().replace(/\s/g,''):
           return <Kebbi {...this.props} />
           break;
-        case Constants.KOGI:
+        case Constants.KOGI.toLowerCase().replace(/\s/g,''):
           return <Kogi {...this.props} />
           break;
-        case Constants.KWARA:
+        case Constants.KWARA.toLowerCase().replace(/\s/g,''):
           return <Kwara {...this.props} />
           break;
-        case Constants.LAGOS:
+        case Constants.LAGOS.toLowerCase().replace(/\s/g,''):
           return <Lagos {...this.props} />
           break;
-        case Constants.NASSARAWA:
+        case Constants.NASSARAWA.toLowerCase().replace(/\s/g,''):
           return <Nassarawa {...this.props} />
           break;
-        case Constants.NIGER:
+        case Constants.NIGER.toLowerCase().replace(/\s/g,''):
           return <Niger {...this.props} />
           break;
-        case Constants.OGUN:
+        case Constants.OGUN.toLowerCase().replace(/\s/g,''):
           return <Ogun {...this.props} />
           break;
-        case Constants.OGUN:
+        case Constants.OGUN.toLowerCase().replace(/\s/g,''):
           return <Ogun {...this.props} />
           break;
-        case Constants.ONDO:
+        case Constants.ONDO.toLowerCase().replace(/\s/g,''):
           return <Ondo {...this.props} />
           break;
-        case Constants.OSUN:
+        case Constants.OSUN.toLowerCase().replace(/\s/g,''):
           return <Osun {...this.props} />
           break;
-        case Constants.OYO:
+        case Constants.OYO.toLowerCase().replace(/\s/g,''):
           return <Oyo {...this.props} />
           break;
-        case Constants.PLATEAU:
+        case Constants.PLATEAU.toLowerCase().replace(/\s/g,''):
           return <Plateau {...this.props} />
           break;
-        case Constants.RIVERS:
+        case Constants.RIVERS.toLowerCase().replace(/\s/g,''):
           return <Rivers {...this.props} />
           break;
-        case Constants.SOKOTO:
+        case Constants.SOKOTO.toLowerCase().replace(/\s/g,''):
           return <Sokoto {...this.props} />
           break;
-        case Constants.TARABA:
+        case Constants.TARABA.toLowerCase().replace(/\s/g,''):
           return <Taraba {...this.props} />
           break;
-        case Constants.YOBE:
+        case Constants.YOBE.toLowerCase().replace(/\s/g,''):
           return <Yobe {...this.props} />
           break;
-        case Constants.ZAMFARA:
+        case Constants.ZAMFARA.toLowerCase().replace(/\s/g,''):
           return <Zamfara {...this.props} />
           break;
         default:

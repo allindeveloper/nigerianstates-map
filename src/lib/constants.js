@@ -1,6 +1,7 @@
 export const ABIA = "abia";
 export const ADAMAWA = "adamawa";
 export const AKWAIBOM = "akwaibom";
+export const FEDERALCAPITALTERRITORY = "Federal Capital Territory";
 export const ALL = "all";
 export const ANAMBRA = "anambra";
 export const BAUCHI = "bauchi";
