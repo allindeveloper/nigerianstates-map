@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types"; 
-class Nassarawa extends Component {
+class nasarawa extends Component {
   constructor(props) {
     super(props);
      
@@ -29,7 +29,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref="myRef1">Nassarawa State</span>
+          <span id={this.state.id} ref="myRef1">nasarawa State</span>
           <svg
             height="300.0226150793651"
             version="1.1"
@@ -91,7 +91,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
                 dy="7.642718253968241"
                 style={{"WebkitTapHighlightColor": "rgba(0, 0, 0, 0)"}}
               >
-                Nassarawa
+                nasarawa
                            </tspan>
             </text>
           </svg>
@@ -111,7 +111,7 @@ const nassarawaData =
       val +
       "" +
       "</div>";
-Nassarawa.defaultProps = {
+nasarawa.defaultProps = {
   hoverColor:"red",
   hoverBackgroundColor:"grey",
   renderData:nassarawaData,
@@ -119,7 +119,7 @@ Nassarawa.defaultProps = {
   id:"nass"
 };
 
-Nassarawa.propTypes = {
+nasarawa.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
@@ -127,4 +127,4 @@ Nassarawa.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
-export default Nassarawa;
+export default nasarawa;

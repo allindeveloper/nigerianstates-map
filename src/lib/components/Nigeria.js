@@ -34,7 +34,7 @@ import Gombe from "../components/Gombe";
 import Yobe from "../components/Yobe";
 import Taraba from "../components/Taraba";
 import Ebonyi from "../components/Ebonyi";
-import Nassarawa from "../components/Nassarawa";
+import Nasarawa from "../components/Nasarawa";
 import Bayelsa from "../components/Bayelsa";
 import Fct from "../components/Fct";
 import * as Constants from "../constants";
@@ -151,8 +151,8 @@ class Nigeria extends Component {
         case Constants.LAGOS:
           return <Lagos {...this.props} />
           break;
-        case Constants.NASSARAWA:
-          return <Nassarawa {...this.props} />
+        case Constants.NASARAWA:
+          return <Nasarawa {...this.props} />
           break;
         case Constants.NIGER:
           return <Niger {...this.props} />
