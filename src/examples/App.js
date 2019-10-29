@@ -33,12 +33,13 @@ class App extends React.Component {
     return (
       <div>
         <Nigeria
-          stateName="delta"
+          stateName="Zamafara"
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}
           defaultColor="green"
           id="lag"
+          height={"100.0226150793651"}
         />
         {/* <Abia
         />

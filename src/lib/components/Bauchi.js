@@ -31,7 +31,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
       <a href="javascript:void(0)" className="tip">
           <span id={this.state.id} ref="myRef1">Bauchi State</span>
         <svg
-          height="300.0226150793651"
+          height={this.props.height}
           version="1.1"
           width="369.2"
           xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +208,8 @@ Bauchi.defaultProps = {
   hoverBackgroundColor:"grey",
   renderData:bauchiData,
   defaultColor:"green",
-  id:"anam"
+  id:"anam",
+  height: ""
 };
 
 Bauchi.propTypes = {
@@ -217,5 +218,6 @@ Bauchi.propTypes = {
   renderData: PropTypes.string.isRequired,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  height: PropTypes.string
 };
 export default Bauchi;

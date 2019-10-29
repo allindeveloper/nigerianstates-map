@@ -33,7 +33,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
             Abuja
           </span>
           <svg
-            height="300.0226150793651"
+            height={this.props.height}
             version="1.1"
             width="369.2"
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,8 @@ Fct.defaultProps = {
   hoverBackgroundColor: "grey",
   renderData: fctData,
   defaultColor: "green",
-  id: "fc"
+  id: "fc",
+  height: ""
 };
 
 Fct.propTypes = {
@@ -127,7 +128,8 @@ Fct.propTypes = {
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
   defaultColor: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired
 };
 
 export default Fct;
