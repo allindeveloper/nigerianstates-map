@@ -17,24 +17,24 @@ class Bayelsa extends Component {
 
   componentWillMount() { }
   componentDidMount() {
-    let {showRenderData} = this.state;
+    let { showRenderData } = this.state;
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
     `;
-    if(showRenderData){
-    this.refs.myRef1.innerHTML = "";
-    this.refs.myRef1.innerHTML += this.state.renderData;
+    if (showRenderData) {
+      this.refs.myRef1.innerHTML = "";
+      this.refs.myRef1.innerHTML += this.state.renderData;
     }
   }
   render() {
-    let {showRenderData} = this.state;
+    let { showRenderData } = this.state;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          {(showRenderData)&&<span id={this.state.id} ref="myRef1">Bayelsa State</span>}
+          {(showRenderData) && <span id={this.state.id} ref="myRef1">Bayelsa State</span>}
           <svg
             height={this.props.height}
             version="1.1"
@@ -108,19 +108,17 @@ class Bayelsa extends Component {
 const state = "State Info";
 const val = 55;
 const bayelsaState =
-  '<div class="hoverinfo">' +
-  "<h6>" +
-  state +
-  " </h6>" +
-  "Total No Of Farms - " +
-  val +
-  "" +
-  "</div>";
+'<div class="hoverinfo">' +
+"<h3>State</h3>"+
+"<h5>PVHHTarget - " + 14000 +"</h5>"+
+"<h5>ZoneName - " + 34030+"</h5>"+
+"" +
+"</div>";
 Bayelsa.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
   renderData: bayelsaState,
-  showRenderData:false,
+  showRenderData: false,
   defaultColor: "green",
   id: "baye",
   height: ""
@@ -130,7 +128,7 @@ Bayelsa.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
-  showRenderData:PropTypes.bool,
+  showRenderData: PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   height: PropTypes.string

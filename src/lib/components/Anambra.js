@@ -269,14 +269,12 @@ class Anambra extends Component {
 const state = "State Info";
 const val = 55;
 const anambraData =
-  '<div class="hoverinfo">' +
-  "<h6>" +
-  state +
-  " </h6>" +
-  "Total No Of Farms - " +
-  val +
-  "" +
-  "</div>";
+'<div class="hoverinfo">' +
+"<h3>State</h3>"+
+"<h5>PVHHTarget - " + 14000 +"</h5>"+
+"<h5>ZoneName - " + 34030+"</h5>"+
+"" +
+"</div>";
 Anambra.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
