@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div>
         <Nigeria
-          stateName="Abia"
+          stateName="jigawa"
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}

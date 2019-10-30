@@ -30,10 +30,11 @@ class Jigawa extends Component {
     }
   }
   render() {
+    let {showRenderData} = this.state;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref="myRef1">Jigawa State</span>
+          {(showRenderData)&&<span id={this.state.id} ref="myRef1">Jigawa State</span>}
           <svg
             height={this.props.height}
             version="1.1"
