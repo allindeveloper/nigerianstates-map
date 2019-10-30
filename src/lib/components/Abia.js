@@ -3,40 +3,45 @@ import PropTypes from 'prop-types';
 class Abia extends Component {
   constructor(props) {
     super(props);
-     
+
 
     this.state = {
-      hoverColor:this.props.hoverColor,
-   hoverBackgroundColor:this.props.hoverBackgroundColor,
-      renderData:this.props.renderData,
-      defaultColor:this.props.defaultColor,
-      id:this.props.id
+      hoverColor: this.props.hoverColor,
+      hoverBackgroundColor: this.props.hoverBackgroundColor,
+      renderData: this.props.renderData,
+      showRenderData:this.props.showRenderData,
+      defaultColor: this.props.defaultColor,
+      id: this.props.id
     };
   }
 
-  componentWillMount() {}
+  componentWillMount() { }
   componentDidMount() {
+    let {showRenderData} = this.state;
+    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
     `;
-      this.refs.myRef1.innerHTML = "";
-this.refs.myRef1.innerHTML += this.state.renderData;
+    this.refs.myRef1.innerHTML = "";
+    this.refs.myRef1.innerHTML += this.state.renderData;
+    }
   }
   render() {
+    let {showRenderData} = this.state;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref="myRef1">Abia State</span>
+          {(showRenderData) &&<span id={this.state.id} ref="myRef1">Abia State</span>}
           <svg
             height={this.props.height}
             version="1.1"
             width="369.2"
             xmlns="http://www.w3.org/2000/svg"
             style={{
-              display:"block",
+              display: "block",
               overflow: "hidden",
               position: "relative",
               left: "-0.2px",
@@ -149,7 +154,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
                 Abia
               </tspan>
             </text>
-           
+
           </svg>
         </a>
       </div>
@@ -158,29 +163,31 @@ this.refs.myRef1.innerHTML += this.state.renderData;
 }
 
 const state = "State Info";
-    const val = 55;
+const val = 55;
 const abiaData =
-      '<div class="hoverinfo">' +
-      "<h6>" +
-      state +
-      " </h6>" +
-      "Total No Of Beneficiaries - " +
-      val +
-      "" +
-      "</div>";
+  '<div class="hoverinfo">' +
+  "<h6>" +
+  state +
+  " </h6>" +
+  "Total No Of Beneficiaries - " +
+  val +
+  "" +
+  "</div>";
 Abia.defaultProps = {
-  hoverColor:"red",
-  hoverBackgroundColor:"grey",
-  renderData:abiaData,
-  defaultColor:"green",
-  id:"ab",
-    height: ""
+  hoverColor: "red",
+  hoverBackgroundColor: "grey",
+  renderData: abiaData,
+  showRenderData:false,
+  defaultColor: "green",
+  id: "ab",
+  height: ""
 };
 
 Abia.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
-  renderData: PropTypes.string.isRequired,
+  renderData: PropTypes.string,
+  showRenderData:PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   height: PropTypes.string

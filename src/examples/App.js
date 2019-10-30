@@ -37,6 +37,7 @@ class App extends React.Component {
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}
+          showRenderData={true}
           defaultColor="green"
           id="lag"
           height={"100.0226150793651"}
