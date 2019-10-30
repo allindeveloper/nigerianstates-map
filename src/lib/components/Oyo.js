@@ -17,6 +17,8 @@ class Oyo extends Component {
 
   componentWillMount() { }
   componentDidMount() {
+    let {showRenderData} = this.state;
+    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
@@ -25,12 +27,14 @@ class Oyo extends Component {
     `;
     this.refs.myRef1.innerHTML = "";
     this.refs.myRef1.innerHTML += this.state.renderData;
+    }
   }
   render() {
+    let {showRenderData} = this.state;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref="myRef1">Oyo State</span>
+          {(showRenderData)&&<span id={this.state.id} ref="myRef1">Oyo State</span>}
           <svg
             height={this.props.height}
             version="1.1"
@@ -159,6 +163,7 @@ Oyo.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
   renderData: oyoData,
+  showRenderData:false,
   defaultColor: "green",
   id: "oy",
   height: ""
@@ -168,6 +173,7 @@ Oyo.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
+  showRenderData:PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   height: PropTypes.string

@@ -17,6 +17,8 @@ class Kwara extends Component {
 
   componentWillMount() { }
   componentDidMount() {
+    let {showRenderData} = this.state;
+    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
@@ -25,12 +27,14 @@ class Kwara extends Component {
     `;
     this.refs.myRef1.innerHTML = "";
     this.refs.myRef1.innerHTML += this.state.renderData;
+    }
   }
   render() {
+    let {showRenderData} = this.state;
     return (
       <div className="App">
         <a href="javascript:void(0)" className="tip">
-          <span id={this.state.id} ref="myRef1">Kwara State</span>
+          {(showRenderData)&&<span id={this.state.id} ref="myRef1">Kwara State</span>}
           <svg
             height={this.props.height}
             version="1.1"
@@ -461,6 +465,7 @@ Kwara.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
   renderData: kwaraData,
+  showRenderData:false,
   defaultColor: "green",
   id: "ab",
   height: ""
@@ -470,6 +475,7 @@ Kwara.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
+  showRenderData:PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   height: PropTypes.string

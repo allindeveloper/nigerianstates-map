@@ -17,6 +17,8 @@ class Osun extends Component {
 
   componentWillMount() { }
   componentDidMount() {
+    let {showRenderData} = this.state;
+    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
@@ -25,6 +27,7 @@ class Osun extends Component {
     `;
     this.refs.myRef1.innerHTML = "";
     this.refs.myRef1.innerHTML += this.state.renderData;
+    }
   }
   render() {
     return (
@@ -208,6 +211,7 @@ Osun.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
   renderData: osunData,
+  showRenderData:false,
   defaultColor: "green",
   id: "osu",
   height: ""
@@ -217,6 +221,7 @@ Osun.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
+  showRenderData:PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   height: PropTypes.string
