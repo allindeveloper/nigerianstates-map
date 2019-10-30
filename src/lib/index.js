@@ -32,7 +32,7 @@ import Gombe from "./components/Gombe";
 import Yobe from "./components/Yobe";
 import Taraba from "./components/Taraba";
 import Ebonyi from "./components/Ebonyi";
-import Nassarawa from "./components/Nassarawa";
+import nasarawa from "./components/nasarawa";
 import Bayelsa from "./components/Bayelsa";
 import Nigeria from "./components/Nigeria";
 import "./index.css";
@@ -63,7 +63,7 @@ export {
   Kogi,
   Kwara,
   Lagos,
-  Nassarawa,
+  nasarawa,
   Niger,
   Ogun,
   Ondo,
