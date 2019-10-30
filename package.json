@@ -1,6 +1,7 @@
 {
   "name": "nigerianstates-map",
   "version": "0.1.24",
+  "description": "A React Map library for Nigerian States Map",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -18,7 +19,18 @@
     "type": "git",
     "url": "https://github.com/allindeveloper/nigerianstates-map"
   },
-  "author": "Uchendu Precious",
+  "author": {
+    "name": "Uchendu Precious",
+    "email": "uchendubozz@gmail.com",
+    "url": "https://github.com/allindeveloper"
+  },
+  "contributors": [
+    {
+      "name": "Onyekoha Juliet",
+      "email": "julietonyekaoha@gmail.com",
+      "url": "https://github.com/esotericjules"
+    }
+  ],
   "license": "Apache",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
