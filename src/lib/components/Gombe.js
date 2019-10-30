@@ -10,7 +10,8 @@ class Gombe extends Component {
    hoverBackgroundColor:this.props.hoverBackgroundColor,
       renderData:this.props.renderData,
       defaultColor:this.props.defaultColor,
-      id:this.props.id
+      id:this.props.id,
+
     };
   }
 
@@ -31,7 +32,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
         <a href="javascript:void(0)" className="tip">
           <span id={this.state.id} ref="myRef1">Gombe State</span>
           <svg
-            height="300.0226150793651"
+            height={this.props.height}
             version="1.1"
             width="369.2"
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +118,8 @@ Gombe.defaultProps = {
   hoverBackgroundColor:"grey",
   renderData:gombeData,
   defaultColor:"green",
-  id:"gomb"
+  id:"gomb",
+    height: ""
 };
 
 Gombe.propTypes = {
@@ -126,6 +128,7 @@ Gombe.propTypes = {
   renderData: PropTypes.string.isRequired,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  height: PropTypes.string
 };
 
 export default Gombe;

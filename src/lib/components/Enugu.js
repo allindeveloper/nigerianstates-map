@@ -31,7 +31,7 @@ this.refs.myRef1.innerHTML += this.state.renderData;
         <a href="javascript:void(0)" className="tip">
           <span id={this.state.id} ref="myRef1">Enugu State</span>
           <svg
-            height="300.0226150793651"
+            height={this.props.height}
             version="1.1"
             width="369.2"
             xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +277,8 @@ Enugu.defaultProps = {
   hoverBackgroundColor:"grey",
   renderData:enuguData,
   defaultColor:"green",
-  id:"enug"
+  id:"enug",
+  height: ""
 };
 
 Enugu.propTypes = {
@@ -286,6 +287,7 @@ Enugu.propTypes = {
   renderData: PropTypes.string.isRequired,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  height: PropTypes.string
 };
 
 export default Enugu;
