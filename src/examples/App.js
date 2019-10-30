@@ -33,7 +33,7 @@ class App extends React.Component {
     return (
       <div>
         <Nigeria
-          stateName="Abia"
+          stateName="Anambra"
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}

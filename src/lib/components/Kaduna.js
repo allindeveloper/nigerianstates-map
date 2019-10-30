@@ -9,6 +9,7 @@ class Kaduna extends Component {
       hoverColor: this.props.hoverColor,
       hoverBackgroundColor: this.props.hoverBackgroundColor,
       renderData: this.props.renderData,
+      showRenderData: this.props.showRenderData,
       defaultColor: this.props.defaultColor,
       id: this.props.id
     };
