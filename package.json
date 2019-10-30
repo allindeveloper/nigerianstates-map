@@ -1,6 +1,6 @@
 {
   "name": "nigerianstates-map",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "description": "A React Map library for Nigerian States Map",
   "main": "dist/index.js",
   "module": "dist/index.js",
