@@ -16,7 +16,7 @@ class App extends React.Component {
       "" +
       "</div>";
       let plateauData =  '<div class="hoverinfo">' +
-      "<h3>Edo State</h3>"+
+      "<h3>State Name</h3>"+
       "<h5>PVHHTarget - " + 14000 +"</h5>"+
       "<h5>ZoneName - " + 34030+"</h5>"+
       "" +
@@ -24,11 +24,11 @@ class App extends React.Component {
     return (
       <div>
         <Nigeria
-          stateName="Anambra"
+          stateName="Abia"
           hoverColor="red"
           hoverBackgroundColor="grey"
           renderData={plateauData}
-          showRenderData={true}
+          showRenderData={false}
           defaultColor="green"
           id="lag"
           height={"100.0226150793651"}

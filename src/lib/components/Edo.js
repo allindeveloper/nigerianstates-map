@@ -18,13 +18,13 @@ class Edo extends Component {
   componentWillMount() { }
   componentDidMount() {
     let {showRenderData} = this.state;
-    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
     `;
+    if(showRenderData){
     this.refs.myRef1.innerHTML = "";
     this.refs.myRef1.innerHTML += this.state.renderData;
     }

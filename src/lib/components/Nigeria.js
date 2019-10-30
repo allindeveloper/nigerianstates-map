@@ -54,10 +54,10 @@ class Nigeria extends Component {
   }
 
   componentWillMount() {
-    let {showRenderData} = this.state;
-    if(showRenderData){
-    let styles = document.head.appendChild(document.createElement("style"));
-    styles.innerHTML += `
+    let { showRenderData } = this.state;
+    if (showRenderData) {
+      let styles = document.head.appendChild(document.createElement("style"));
+      styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor};
@@ -67,12 +67,12 @@ class Nigeria extends Component {
   }
       
     `;
-}
+    }
   }
 
   componentDidMount() { }
   renderState() {
-    
+
     let count = {};
     count = this.state;
 
@@ -211,20 +211,17 @@ class Nigeria extends Component {
 }
 const state = "State Info";
 const val = 55;
-const lagosData =
-  '<div class="hoverinfo">' +
-  "<h6>" +
-  state +
-  " </h6>" +
-  "Total No Of Farms - " +
-  val +
+const lagosData = '<div class="hoverinfo">' +
+  "<h3>NIgeria </h3>" +
+  "<h5>PVHHTarget - " + 14000 + "</h5>" +
+  "<h5>ZoneName - " + 34030 + "</h5>" +
   "" +
   "</div>";
 Nigeria.defaultProps = {
   stateName: "Lagos",
   hoverColor: "red",
   hoverBackgroundColor: "grey",
-  showRenderData:false,
+  showRenderData: false,
   renderData: lagosData,
   defaultColor: "green",
   id: "lg"
@@ -235,7 +232,7 @@ Nigeria.propTypes = {
   hoverColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string.isRequired,
   renderData: PropTypes.string.isRequired,
-  showRenderData:PropTypes.bool,
+  showRenderData: PropTypes.bool,
   defaultColor: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired
 };

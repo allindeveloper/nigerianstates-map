@@ -18,16 +18,17 @@ class Abia extends Component {
   componentWillMount() { }
   componentDidMount() {
     let {showRenderData} = this.state;
-    if(showRenderData){
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
     #${this.state.id}:hover{fill: ${this.state.hoverColor} }
     #${this.state.id}{fill: ${this.state.defaultColor} }
     #${this.state.id}{background-color: ${this.state.hoverBackgroundColor} }
     `;
+    if(showRenderData){
     this.refs.myRef1.innerHTML = "";
     this.refs.myRef1.innerHTML += this.state.renderData;
     }
+   
   }
   render() {
     let {showRenderData} = this.state;
@@ -164,15 +165,12 @@ class Abia extends Component {
 
 const state = "State Info";
 const val = 55;
-const abiaData =
-  '<div class="hoverinfo">' +
-  "<h6>" +
-  state +
-  " </h6>" +
-  "Total No Of Beneficiaries - " +
-  val +
-  "" +
-  "</div>";
+const abiaData ='<div class="hoverinfo">' +
+"<h3>Abia State</h3>"+
+"<h5>PVHHTarget - " + 14000 +"</h5>"+
+"<h5>ZoneName - " + 34030+"</h5>"+
+"" +
+"</div>";
 Abia.defaultProps = {
   hoverColor: "red",
   hoverBackgroundColor: "grey",
