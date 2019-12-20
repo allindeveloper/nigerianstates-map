@@ -6,7 +6,7 @@ This is a React Map library for Nigerian States
 
 ## Intro
 
-This React library provides a visualization to various individual States in the Country of Nigeira
+This React library provides a visualization to various individual States in the Country of Nigeria
 
 ### Note
 You can check the src/examples from the project directory for assistance.
