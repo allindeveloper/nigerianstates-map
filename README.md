@@ -15,6 +15,9 @@ You can check the src/examples from the project directory for assistance.
 ```
 npm install --save nigerianstates-map
 ```
+```
+yarn add nigerianstates-map
+```
 #
 ![alt text](https://drive.google.com/uc?export=view&id=1MK6KvyI-41J2aQYPO6Nkm66MYTRZHQxf)
 
@@ -99,11 +102,10 @@ See the test files in `src/lib/tests` for an example of a component test.
 
 
 ## Contributing
-1. Fork it!
-2. Create your feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m 'Some commit message'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request 😉😎
+1. Create your feature branch: `git checkout -b feature-name`
+2. Commit your changes: `git commit -m 'Some commit message'`
+3. Push to the branch: `git push origin feature-name`
+4. Submit a pull request 😉😎
 
 ## How can I thank you?
 
