@@ -18,10 +18,10 @@ npm install --save nigerianstates-map
 ```
 yarn add nigerianstates-map
 ```
-#
+
 ![Lagos](lagossample.png)
 
-## 
+
 ![Lagos Hover](lagossamplehover.png)
 
 
