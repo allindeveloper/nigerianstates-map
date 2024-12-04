@@ -25,7 +25,6 @@ yarn add nigerianstates-map
 ![Lagos Hover](lagossamplehover.png)
 
 
-
 ### Sample Usage
 
 ```javascript
@@ -90,7 +89,5 @@ See the test files in `src/lib/tests` for an example of a component test.
 ## How can I thank you?
 
 Why not star the github repo? Share to Others too.
-
-And don't forget to [follow me on twitter](https://twitter.com/allindeveloper)!
 
 
