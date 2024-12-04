@@ -1,35 +1,25 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { StateProps } from "../types/Nigeria";
 
 export interface AbiaProps extends StateProps {
-  height?: number
+  height?: number;
 }
+
 const Abia = (props: AbiaProps) => {
-  const [hoverColor,] = useState(props.hoverColor)
-  const [hoverBackgroundColor,] = useState(props.hoverBackgroundColor)
-  const [renderData,] = useState(props.renderData)
-  const [defaultColor,] = useState(props.defaultColor)
-  const [showRenderData,] = useState(props.showRenderData);
-  const [id,] = useState(props.id)
-  const myRef1 = useRef<HTMLSpanElement | null>(null);
+  const [id] = useState(props.id);
+
   useEffect(() => {
     let styles = document.head.appendChild(document.createElement("style"));
     styles.innerHTML += `
-    #${id}:hover{fill: ${hoverColor} }
-    #${id}{fill: ${defaultColor} }
-    #${id}{background-color: ${hoverBackgroundColor} }
+    #${id}:hover{fill: ${props.hoverColor} }
+    #${id}{fill: ${props.defaultColor} }
+    #${id}{background-color: ${props.hoverBackgroundColor} }
     `;
-    if (showRenderData && myRef1.current) {
-      myRef1.current.innerHTML = "";
-      myRef1.current.innerHTML += renderData;
-    }
-  }, [])
-
+  }, []);
 
   return (
     <div className="App">
-      <a href="javascript:void(0)" className="tip">
-        {showRenderData && <span id={id} ref={myRef1}>Abia State</span>}
+      <div className="tip">
         <svg
           height={props?.height}
           version="1.1"
@@ -40,7 +30,7 @@ const Abia = (props: AbiaProps) => {
             overflow: "hidden",
             position: "relative",
             left: "-0.2px",
-            top: "0.2px"
+            top: "0.2px",
           }}
           viewBox="126.44671500183323 243.748879669713 45.98276047252394 37.36692320025649"
           preserveAspectRatio="xMinYMin"
@@ -58,8 +48,8 @@ const Abia = (props: AbiaProps) => {
             transform="matrix(0.3663,0,0,0.3663,0,0)"
             strokeWidth="0.3400417065000732"
             style={{
-              "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-              "fillOpacity": "0"
+              WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
+              fillOpacity: "0",
             }}
             fillOpacity="0"
           />
@@ -75,34 +65,32 @@ const Abia = (props: AbiaProps) => {
             strokeLinejoin="round"
             transform="matrix(0.3663,0,0,0.3663,0,0)"
             style={{
-              "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+              WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
               opacity: "1",
               cursor: "pointer",
-              "strokeOpacity": "1",
-              "strokeLinejoin": "round",
-              "fillOpacity": "1"
+              strokeOpacity: "1",
+              strokeLinejoin: "round",
+              fillOpacity: "1",
             }}
             fillOpacity="1"
           />
-          <desc style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}>
+          <desc style={{ WebkitTapHighlightColor: "rgba(0, 0, 0, 0)" }}>
             Created by Uchendu Precious. @allindeveloper
           </desc>
-          <defs
-            style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
-          />
+          <defs style={{ WebkitTapHighlightColor: "rgba(0, 0, 0, 0)" }} />
           <text
             x="149.47472222222223"
             y="254.9604365079365"
             textAnchor="middle"
-            // 
+            //
             stroke="none"
             fill="#d5ddec"
             style={{
-              "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-              "textAnchor": "middle",
+              WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
+              textAnchor: "middle",
               font: "bold 22px Arial",
               cursor: "pointer",
-              opacity: "1"
+              opacity: "1",
             }}
             strokeWidth="0"
             fontSize="22px"
@@ -114,7 +102,7 @@ const Abia = (props: AbiaProps) => {
           >
             <tspan
               dy="7.6479365079364925"
-              style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
+              style={{ WebkitTapHighlightColor: "rgba(0, 0, 0, 0)" }}
             >
               Abia
             </tspan>
@@ -123,37 +111,35 @@ const Abia = (props: AbiaProps) => {
             x="149.47472222222223"
             y="254.9604365079365"
             textAnchor="middle"
-            // 
+            //
             stroke="none"
             fill="#d5ddec"
             style={{
-              "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-              "textAnchor": "middle",
+              WebkitTapHighlightColor: "rgba(0, 0, 0, 0)",
+              textAnchor: "middle",
               font: "bold 22px Arial",
               cursor: "pointer",
-              opacity: "1"
+              opacity: "1",
             }}
             strokeWidth="0"
             fontSize="22px"
             fontWeight="bold"
-            // 
+            //
             opacity="1"
             transform="matrix(0.3663,0,0,0.3663,94.7266,161.5761)"
             className="sm_label_72"
           >
             <tspan
               dy="7.6479365079364925"
-              style={{ "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)" }}
+              style={{ WebkitTapHighlightColor: "rgba(0, 0, 0, 0)" }}
             >
               Abia
             </tspan>
           </text>
-
         </svg>
-      </a>
+      </div>
     </div>
-  )
-}
-
+  );
+};
 
 export default Abia;

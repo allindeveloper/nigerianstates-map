@@ -76,5 +76,5 @@ export {
   Plateau,
   Rivers,
   Sokoto,
-  Taraba
+  Taraba,
 };
