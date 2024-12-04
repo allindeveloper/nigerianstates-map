@@ -32,7 +32,7 @@ yarn add nigerianstates-map
 ```javascript
 
 import React from "react";
-import {Lagos, Kaduna, Nigeria} from 'nigerianstates-map'; 
+import {Lagos, Kaduna, Nigeria, State} from 'nigerianstates-map'; 
 
 /**
  * You can import any state you need.
@@ -45,45 +45,26 @@ class App extends React.Component {
     /**
     * You can import any state you need.
     */
-
-    let state = "Lagos Data";
-    let val = 55000;
-    let lagosData =  '<div class="hoverinfo">' +
-    "<h6>" +
-     state+
-    " State </h6>" +
-    "Total No Of People- " +
-    val +
-    "" +
-    "</div>";
     
     /**
-    * @prop hoverColor=>string color to be used when the map is hovered on.
-    * @param hoverBackgroundColor=>Background color of the  data-tool-tip for the map is on hover
+    * @param hoverColor=>string color to be used when the map is hovered on.
     * @param defaultColor=> the default color for the map
     * @param id=> A unique id for the map 
-    * @param renderData=> Html formatted String to be Displayed on Hover 
-    * @param showRenderData=> A boolean value to show renderData
     */
     return(
       <div>
         <Nigeria
-          stateName="plateau"
-          hoverColor="red"
-          hoverBackgroundColor="grey"
-          renderData={plateauData}
-          showRenderData={false}
-          defaultColor="green"
-          id="plat"
+          stateName={State.LAGOS}
+          hoverColor="purple"
+          defaultColor="blue"
+          id="lagos"
         />
         <Kaduna
         />
         <Lagos
-          hoverColor="red"
-          hoverBackgroundColor="grey"
-          renderData={lagosData}
-          defaultColor="green"
-          id="lag"
+          hoverColor="purple"
+          defaultColor="blue"
+          id="lagos"
         />
      
     </div>

@@ -6,10 +6,10 @@ const App = () => {
   return (
     <div>
       <Nigeria
-        state={State.OGUN}
+        state={State.LAGOS}
         hoverColor="purple"
-        defaultColor="red"
-        id="ogun"
+        defaultColor="blue"
+        id="lagos"
         height={100}
       />
     </div>
