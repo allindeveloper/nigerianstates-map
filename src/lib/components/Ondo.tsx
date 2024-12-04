@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import { StateProps } from "../types/Nigeria";
 const Ondo = (props: StateProps) => {
-
   const [id] = useState(props.id);
 
   useEffect(() => {
