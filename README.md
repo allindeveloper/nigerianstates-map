@@ -56,14 +56,12 @@ class App extends React.Component {
           state={State.LAGOS}
           hoverColor="purple"
           defaultColor="blue"
-          id="lagos"
-            className="my-map"
+          className="my-map"
           />
 
         <Lagos
           hoverColor="purple"
           defaultColor="blue"
-          id="lagos"
         />
      
     </div>

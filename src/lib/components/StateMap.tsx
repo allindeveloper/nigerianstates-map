@@ -1,6 +1,9 @@
 import React, { type CSSProperties, type ReactNode } from "react";
 import type { StateProps } from "../types/Nigeria";
 
+export const getStateMapId = (stateId: string, id?: string) =>
+  id ? `${stateId}-${id}` : stateId;
+
 type StateMapProps = Pick<
   StateProps,
   "className" | "defaultColor" | "hoverBackgroundColor" | "hoverColor"

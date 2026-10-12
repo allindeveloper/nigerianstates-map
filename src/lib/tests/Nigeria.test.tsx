@@ -8,6 +8,7 @@ describe("Nigeria component", () => {
   it("renders a map for every supported state and applies map props", () => {
     for (const state of new Set(Object.values(State))) {
       const id = `map-${state}`;
+      const stateId = state.toLowerCase().replace(/\s+/g, "-");
       const { container, unmount } = render(
         <Nigeria
           state={state}
@@ -18,7 +19,9 @@ describe("Nigeria component", () => {
         />,
       );
 
-      expect(container.querySelector(`path[id="${id}"]`)).not.toBeNull();
+      expect(
+        container.querySelector(`path[id="${stateId}-${id}"]`),
+      ).not.toBeNull();
       expect(container.querySelector(".custom-map")).not.toBeNull();
       expect(
         container.querySelector(".nigerian-state-map")?.getAttribute("style"),
