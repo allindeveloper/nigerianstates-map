@@ -1,21 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import type { StateProps } from "../types/Nigeria";
+import StateMap from "./StateMap";
 
-import { StateProps } from "../types/Nigeria";
 const Imo = (props: StateProps) => {
-  const [id] = useState(props.id);
-
-  useEffect(() => {
-    let styles = document.head.appendChild(document.createElement("style"));
-    styles.innerHTML += `
-    #${id}:hover{fill: ${props.hoverColor} }
-    #${id}{fill: ${props.defaultColor} }
-    #${id}{background-color: ${props.hoverBackgroundColor} }
-    `;
-  }, []);
   return (
-    <div className="App">
+    <StateMap {...props}>
       <div className="tip">
         <svg
+          role="img"
+          aria-label={props.state}
           height={props.height}
           version="1.1"
           width="369.2"
@@ -51,7 +44,7 @@ const Imo = (props: StateProps) => {
           <path
             fill="#88a4bc"
             stroke="#ffffff"
-            id={id}
+            id={props.id}
             d="M381.9,734.9L379.5,735.6L376.8,736L372.40000000000003,734.7L362.00000000000006,735.7L350.20000000000005,734.9000000000001L341.50000000000006,729.2L340.90000000000003,728.1L338.90000000000003,726.6L338.1,725.7L338,722.8000000000001L339.2,720.1L339.9,714.2L336.5,710.6L333.4,711.3000000000001L330.5,711.1L329.9,709.2L332.5,696.1L333.5,693.2L339,688.7L345.5,686.9000000000001L349.1,688.4000000000001L352.40000000000003,687.5000000000001L355.6,680.8000000000001L356.70000000000005,677.2L359.90000000000003,675.3000000000001L363.6,674.4000000000001L367.40000000000003,674.0000000000001L375.00000000000006,675.6000000000001L378.40000000000003,674.5000000000001L381.8,673.7000000000002L383.6,675.3000000000002L387.8,677.4000000000002L390.1,677.9000000000002L393.3,680.8000000000002L394.40000000000003,690.2000000000002L393.50000000000006,694.0000000000001L392.80000000000007,695.2000000000002L393.70000000000005,696.8000000000002L394.30000000000007,698.9000000000002L394.30000000000007,701.2000000000002L394.70000000000005,703.5000000000001L394.70000000000005,705.8000000000001L394.1,707.8000000000001L392.90000000000003,709.5000000000001L392.20000000000005,711.7000000000002L391.20000000000005,713.8000000000002L388.00000000000006,717.3000000000002L381.90000000000003,734.9000000000002Z"
             className="sm_state_NGA2843"
             opacity="1"
@@ -383,7 +376,7 @@ const Imo = (props: StateProps) => {
           </text>
         </svg>
       </div>
-    </div>
+    </StateMap>
   );
 };
 

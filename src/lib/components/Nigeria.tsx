@@ -1,43 +1,43 @@
 import React from "react";
+import type { NigeriaProps } from "../types/Nigeria";
+import { State } from "../types/State";
 import Abia from "./Abia";
-import Katsina from "./Katsina";
-import Lagos from "./Lagos";
-import Kano from "./Kano";
-import Kaduna from "./Kaduna";
-import Oyo from "./Oyo";
-import Rivers from "./Rivers";
-import Bauchi from "./Bauchi";
-import Jigawa from "./Jigawa";
-import Benue from "./Benue";
-import Anambra from "./Anambra";
-import Borno from "./Borno";
-import Delta from "./Delta";
-import Imo from "./Imo";
-import Niger from "./Niger";
+import Adamawa from "./Adamawa";
 import AkwaIbom from "./AkwaIbom";
+import Anambra from "./Anambra";
+import Bauchi from "./Bauchi";
+import Bayelsa from "./Bayelsa";
+import Benue from "./Benue";
+import Borno from "./Borno";
+import CrossRiver from "./CrossRiver";
+import Delta from "./Delta";
+import Ebonyi from "./Ebonyi";
+import Edo from "./Edo";
+import Ekiti from "./Ekiti";
+import Enugu from "./Enugu";
+import Fct from "./Fct";
+import Gombe from "./Gombe";
+import Imo from "./Imo";
+import Jigawa from "./Jigawa";
+import Kaduna from "./Kaduna";
+import Kano from "./Kano";
+import Katsina from "./Katsina";
+import Kebbi from "./Kebbi";
+import Kogi from "./Kogi";
+import Kwara from "./Kwara";
+import Lagos from "./Lagos";
+import Nasarawa from "./Nasarawa";
+import Niger from "./Niger";
 import Ogun from "./Ogun";
-import Sokoto from "./Sokoto";
 import Ondo from "./Ondo";
 import Osun from "./Osun";
-import Kogi from "./Kogi";
-import Zamfara from "./Zamfara";
-import Enugu from "./Enugu";
-import Kebbi from "./Kebbi";
-import Edo from "./Edo";
+import Oyo from "./Oyo";
 import Plateau from "./Plateau";
-import Adamawa from "./Adamawa";
-import CrossRiver from "./CrossRiver";
-import Ekiti from "./Ekiti";
-import Kwara from "./Kwara";
-import Gombe from "./Gombe";
-import Yobe from "./Yobe";
+import Rivers from "./Rivers";
+import Sokoto from "./Sokoto";
 import Taraba from "./Taraba";
-import Ebonyi from "./Ebonyi";
-import Nasarawa from "./Nasarawa";
-import Bayelsa from "./Bayelsa";
-import Fct from "./Fct";
-import { NigeriaProps } from "../types/Nigeria";
-import { State } from "../types/State";
+import Yobe from "./Yobe";
+import Zamfara from "./Zamfara";
 
 const Nigeria = (props: NigeriaProps) => {
   const renderState = () => {
@@ -129,9 +129,6 @@ const Nigeria = (props: NigeriaProps) => {
       case State.OGUN:
         return <Ogun {...props} />;
 
-      case State.OGUN:
-        return <Ogun {...props} />;
-
       case State.ONDO:
         return <Ondo {...props} />;
 
@@ -164,7 +161,7 @@ const Nigeria = (props: NigeriaProps) => {
     }
   };
 
-  return <div className="App">{renderState()}</div>;
+  return renderState();
 };
 
 export default Nigeria;

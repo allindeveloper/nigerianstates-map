@@ -1,12 +1,12 @@
 a.tip {
-  text-decoration: none
+  text-decoration: none;
 }
 a.tip:hover {
-  position: relative
+  position: relative;
 }
 a.tip span {
   display: none;
-  margin:0px;
+  margin: 0px;
 }
 a.tip:hover span {
   display: block;
@@ -22,9 +22,25 @@ a.tip:hover span {
   top: 30px;
   text-decoration: none;
   line-height: 0.1rem;
-  color:black;
+  color: black;
   font-size: 20px;
 }
-.App svg {
-  width: max-content;
+.nigerian-state-map {
+  width: 100%;
+}
+
+.nigerian-state-map svg {
+  display: block;
+  width: 100%;
+  max-width: 369.2px;
+  height: auto;
+}
+
+.nigerian-state-map path[id] {
+  fill: var(--map-default-color, #88a4bc);
+  background-color: var(--map-hover-background-color);
+}
+
+.nigerian-state-map path[id]:hover {
+  fill: var(--map-hover-color, #88a4bc);
 }

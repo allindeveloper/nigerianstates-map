@@ -1,22 +1,14 @@
-import React, { useEffect, useState } from "react";
-
-import { StateProps } from "../types/Nigeria";
+import React from "react";
+import type { StateProps } from "../types/Nigeria";
+import StateMap from "./StateMap";
 
 const Fct = (props: StateProps) => {
-  const [id] = useState(props.id);
-
-  useEffect(() => {
-    let styles = document.head.appendChild(document.createElement("style"));
-    styles.innerHTML += `
-    #${id}:hover{fill: ${props.hoverColor} }
-    #${id}{fill: ${props.defaultColor} }
-    #${id}{background-color: ${props.hoverBackgroundColor} }
-    `;
-  }, []);
   return (
-    <div className="App">
+    <StateMap {...props}>
       <div className="tip">
         <svg
+          role="img"
+          aria-label={props.state}
           height={props.height}
           version="1.1"
           width="369.2"
@@ -52,7 +44,7 @@ const Fct = (props: StateProps) => {
           <path
             fill="#88a4bc"
             stroke="#ffffff"
-            id={id}
+            id={props.id}
             d="M413.1,389.4L413.3,391.09999999999997L413,392.7L412,393.4L411,393.7L409.5,396.4L407.6,405.5L407.40000000000003,410.7L407.70000000000005,419L403.80000000000007,436L400.20000000000005,446L397.30000000000007,450.8L393.6000000000001,454.8L382.9000000000001,460.2L371.2000000000001,463.3L359.2000000000001,465.2L355.5000000000001,465.8L352.4000000000001,465.40000000000003L347.30000000000007,465.6L343.50000000000006,465.20000000000005L341.50000000000006,461.6L341.00000000000006,460.1L340.20000000000005,400L340.6,397.6L342.6,396.70000000000005L358,396.1L363,397.6L370.7,405.20000000000005L374.7,407.40000000000003L375.2,407.3L386.9,390.6L394.79999999999995,389.70000000000005L397.09999999999997,389.80000000000007L399.4,390.1000000000001L401.5,391.00000000000006L403.3,389.70000000000005L405.90000000000003,386.00000000000006L408.90000000000003,387.1000000000001L410.40000000000003,390.00000000000006L413.1,389.40000000000003Z"
             className="sm_state_NGA3470"
             opacity="1"
@@ -104,7 +96,7 @@ const Fct = (props: StateProps) => {
           </text>
         </svg>
       </div>
-    </div>
+    </StateMap>
   );
 };
 

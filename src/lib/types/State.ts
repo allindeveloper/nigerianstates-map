@@ -36,5 +36,6 @@ export enum State {
   YOBE = "Yobe",
   ZAMFARA = "Zamfara",
   FCT = "Federal Capital Territory",
+  // biome-ignore lint/suspicious/noDuplicateEnumValues: Abuja intentionally aliases FCT.
   ABUJA = "Federal Capital Territory",
 }
